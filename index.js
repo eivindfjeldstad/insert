@@ -1,31 +1,31 @@
 /**
- * Insert `el` before another element
- *
- * @param {Element} el
- * @param {Element} before
- * @api public
- */
-
-exports.before = function (el, before) {
-  var parent = before.parentNode;
-  parent.insertBefore(el, before);
-};
-
-/**
- * Insert `el` after another element
+ * Insert `el` before `after`
  *
  * @param {Element} el
  * @param {Element} after
  * @api public
  */
 
-exports.after = function (el, after) {
+exports.before = function (el, after) {
   var parent = after.parentNode;
-  parent.insertBefore(el, after.nextSibling);
+  parent.insertBefore(el, after);
 };
 
 /**
- * Prepend `el` to `parent` element
+ * Insert `el` after `before`
+ *
+ * @param {Element} el
+ * @param {Element} before
+ * @api public
+ */
+
+exports.after = function (el, before) {
+  var parent = before.parentNode;
+  parent.insertBefore(el, before.nextSibling);
+};
+
+/**
+ * Prepend `el` to `parent`
  *
  * @param {Element} el
  * @param {Element} parent
@@ -38,7 +38,7 @@ exports.prepend = function (el, parent) {
 };
 
 /**
- * Append `el` to `parent` element
+ * Append `el` to `parent`
  *
  * @param {Element} el
  * @param {Element} parent

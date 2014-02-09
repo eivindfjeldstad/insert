@@ -9,17 +9,17 @@
     $ component install eivindfjeldstad/insert
 
 ## API
-### .before(el, before)
-Insert `el` before another element.
+### .before(el, after)
+Insert `el` before `after`.
 
-### .after(el, after)
-Insert `el` after another element.
+### .after(el, before)
+Insert `el` after `before`.
 
 ### .prepend(el, parent)
-Prepend `el` to `parent` element
+Prepend `el` to `parent`.
 
 ### .append(el, parent)
-Append `el` to `parent` element
+Append `el` to `parent`.
 
 ## License
 
