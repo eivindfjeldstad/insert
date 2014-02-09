@@ -1,0 +1,10 @@
+{
+  "name": "insert",
+  "repo": "eivindfjeldstad/insert",
+  "description": "easy element insertion",
+  "version": "0.0.1",
+  "keywords": ["insert", "before", "after", "prepend", "append"],
+  "license": "MIT",
+  "scripts": ["index.js"],
+  "main": "index.js"
+}
